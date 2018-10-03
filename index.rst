@@ -7,7 +7,7 @@ Welcome to prueba´s documentation!
 ==================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    :caption: Contents:
 
    usage/installation
