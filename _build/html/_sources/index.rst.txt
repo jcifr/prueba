@@ -7,16 +7,17 @@ Welcome to prueba´s documentation!
 ==================================
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 3
    :caption: Contents:
 
    usage/introduction
+   usage/directives
    usage/installation
    usage/quickstart
    usage/tablas
    usage/images
 
-Indices and tables
+Index and tables
 ==================
 
 * :ref:`genindex`

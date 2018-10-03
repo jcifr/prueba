@@ -1,6 +1,12 @@
 Introduction
 ============
 
+This section is a brief introduction to reStructuredText (reST) concepts and
+syntax, intended to provide authors with enough information to author documents
+productively.  Since reST was designed to be a simple, unobtrusive markup
+language, this will not take too long.
+
+
 Paragraphs
 __________
 
@@ -190,4 +196,42 @@ However, this convention is used in Python’s Style Guide for documenting which
 
 Of course, you are free to use your own marker characters (see the reST documentation), and use a deeper nesting level,
 but keep in mind that most target formats (HTML, LaTeX) have a limited supported nesting depth.
+
+Citations
+_________
+
+Standard reST citations are supported, with the additional feature that they are “global”, i.e. all citations can be referenced from all files. Use them like so:
+
+Lorem ipsum [Ref]_ dolor sit amet.
+
+.. [Ref] Book or article reference, URL or whatever.
+
+Citation usage is similar to footnote usage, but with a label that is not numeric or begins with #
+
+Comments
+________
+
+Every explicit markup block which isn’t a valid markup construct (like the footnotes above) is regarded as a comment. For example:
+
+.. This is a comment.
+
+You can indent text after a comment start to form multiline comments:
+
+..
+   This whole indented block
+   is a comment.
+
+   Still in the comment.
+
+Source encoding
+_______________
+
+Since the easiest way to include special characters like em dashes or copyright signs in reST is to directly write them as Unicode characters,
+one has to specify an encoding. Sphinx assumes source files to be encoded in UTF-8 by default;
+you can change this with the source_encoding config value.
+
+
+
+
+
 
