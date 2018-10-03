@@ -1,7 +1,7 @@
 Images
 ================================
 
-How to include images:
+How to include images in project:
 
 .. image:: images/im1.jpg
    :scale: 50 %

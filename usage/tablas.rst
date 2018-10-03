@@ -23,7 +23,6 @@ H4 -- Subsubsection
    True   False
    =====  =====
 
-Another table:
 
 +------------------------+------------+----------+----------+
 | Header row, column 1   | Header 2   | Header 3 | Header 4 |
@@ -64,5 +63,20 @@ Doctest blocks
 >>> 1 + 1
 2
 
-Field Lists
+Definition lists
 ================================
+
+term (up to a line of text)
+   Definition of the term, which must be indented
+
+   and can even consist of multiple paragraphs
+
+next term
+   Description.
+
+Broken lines
+=============
+
+| These lines are
+| broken exactly like in
+| the source file.
