@@ -65,6 +65,13 @@ Directives
 
    This function is not suitable for sending spam e-mails.
 
+How to include images in project:
+
+.. image:: images/im1.jpg
+   :scale: 50 %
+   :alt: alternate text
+   :align: center
+
 .. productionlist::
    try_stmt: try1_stmt | try2_stmt
    try1_stmt: "try" ":" `suite`
@@ -73,4 +80,47 @@ Directives
             : ["finally" ":" `suite`]
    try2_stmt: "try" ":" `suite`
             : "finally" ":" `suite`
+
+.. DANGER::
+   Beware killer rabbits!
+
+.. topic:: Topic Title
+
+    Subsequent indented lines comprise
+    the body of the topic, and are
+    interpreted as body elements.
+
+.. sidebar:: Sidebar Title
+   :subtitle: Optional Sidebar Subtitle
+
+   Subsequent indented lines comprise
+   the body of the sidebar, and are
+   interpreted as body elements.
+
+.. compound::
+
+   The 'rm' command is very dangerous.  If you are logged
+   in as root and enter ::
+
+       cd /
+       rm -rf *
+
+   you will erase the entire contents of your file system.
+
+.. container:: custom
+
+   This paragraph might be rendered in a custom way.
+
+Parsing the above results in the following pseudo-XML:
+
+<container classes="custom">
+    <paragraph>
+        This paragraph might be rendered in a custom way.
+
+The "container" directive is the equivalent of HTML's <div> element.
+It may be used to group a sequence of elements for user- or application-specific purposes.
+
+
+
+
 
