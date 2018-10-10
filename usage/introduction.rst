@@ -1,3 +1,5 @@
+.. Introduction:
+
 Introduction
 ============
 
@@ -6,6 +8,8 @@ syntax, intended to provide authors with enough information to author documents
 productively.  Since reST was designed to be a simple, unobtrusive markup
 language, this will not take too long.
 
+
+.. Paragraphs:
 
 Paragraphs
 __________
@@ -230,6 +234,28 @@ Since the easiest way to include special characters like em dashes or copyright 
 one has to specify an encoding. Sphinx assumes source files to be encoded in UTF-8 by default;
 you can change this with the source_encoding config value.
 
+
+
+Section to cross-reference
+==========================
+
+This is the text of the section.
+
+.. las secciones van subrayadas. Esto es un comentario
+
+.. It refers to the section itself, see For more details, see Paragraphs_.
+
+.. los capitulos van subrayadas. Esto es un comentario
+
+It refers to the section itself, see For more details, see :ref:`Introduction`.
+
+Link to another :ref:`Inline markup`.
+
+Link to another :ref:`The same<Inline markup>` at the same Inline markup.
+
+Link to :ref:`Images`.
+
+Link to :ref:`Figures`.
 
 
 

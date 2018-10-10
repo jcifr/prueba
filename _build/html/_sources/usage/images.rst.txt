@@ -1,3 +1,4 @@
+
 Images
 ================================
 
@@ -7,6 +8,7 @@ How to include images in project:
    :scale: 50 %
    :alt: alternate text
    :align: center
+
 
 Figures
 +++++++
