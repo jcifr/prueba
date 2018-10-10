@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>1. Introduction &#8212; exam  documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3. Directives" href="directives.html" />
+    <link rel="prev" title="Welcome to prueba´s documentation!" href="../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="directives.html" title="3. Directives"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Welcome to prueba´s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">exam  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="introduction">
+<h1>1. Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>This section is a brief introduction to reStructuredText (reST) concepts and
+syntax, intended to provide authors with enough information to author documents
+productively.  Since reST was designed to be a simple, unobtrusive markup
+language, this will not take too long.</p>
+<div class="section" id="paragraphs">
+<h2>1.1. Paragraphs<a class="headerlink" href="#paragraphs" title="Permalink to this headline">¶</a></h2>
+<p>The paragraph is the most basic block in a reST document.
+Paragraphs are simply chunks of text separated by one or more blank lines.
+As in Python, indentation is significant in reST,
+so all lines of the same paragraph must be left-aligned to the same level of indentation.</p>
+</div>
+<div class="section" id="inline-markup">
+<h2>1.2. Inline markup<a class="headerlink" href="#inline-markup" title="Permalink to this headline">¶</a></h2>
+<p>The standard reST inline markup is quite simple: use</p>
+<ul class="simple">
+<li>one asterisk: <em>text</em> for emphasis (italics),</li>
+<li>two asterisks: <strong>text</strong> for strong emphasis (boldface), and</li>
+<li>backquotes: <code class="docutils literal"><span class="pre">text</span></code> for code samples.</li>
+</ul>
+<p>If asterisks or backquotes appear in running text and could be confused with inline markup delimiters,
+they have to be escaped with a backslash.</p>
+<p>Be aware of some restrictions of this markup:</p>
+<ul class="simple">
+<li>it may not be nested,</li>
+<li>content may not start or end with whitespace: * text* is wrong,</li>
+<li>it must be separated from surrounding text by non-word characters.
+Use a backslash escaped space to work around that: thisis<em>one</em>word.</li>
+</ul>
+<p>These restrictions may be lifted in future versions of the docutils.</p>
+<p>reST also allows for custom “interpreted text roles”,
+which signify that the enclosed text should be interpreted in a specific way.
+Sphinx uses this to provide semantic markup and cross-referencing of identifiers,
+as described in the appropriate section.
+The general syntax is <code class="docutils literal"><span class="pre">:rolename:`content</span></code>.`</p>
+<p>Standard reST provides the following roles:</p>
+<ul class="simple">
+<li>emphasis – alternate spelling for <em>emphasis</em></li>
+<li>strong – alternate spelling for <strong>strong</strong></li>
+<li>literal – alternate spelling for <code class="docutils literal"><span class="pre">literal</span></code></li>
+<li>subscript – subscript text</li>
+<li>superscript – superscript text</li>
+<li>title-reference – for titles of books, periodicals, and other materials</li>
+</ul>
+</div>
+<div class="section" id="lists-and-quote-like-blocks">
+<h2>1.3. Lists and Quote-like blocks<a class="headerlink" href="#lists-and-quote-like-blocks" title="Permalink to this headline">¶</a></h2>
+<p>List markup is natural:
+just place an asterisk at the start of a paragraph and indent properly.
+The same goes for numbered lists; they can also be autonumbered using a # sign:</p>
+<ul class="simple">
+<li>This is a bulleted list.</li>
+<li>It has two items, the second
+item uses two lines.</li>
+</ul>
+<ol class="arabic simple">
+<li>This is a numbered list.</li>
+<li>It has two items too.</li>
+<li>This is a numbered list.</li>
+<li>It has two items too.</li>
+</ol>
+<p>Nested lists are possible,
+but be aware that they must be separated from the parent list items by blank lines:</p>
+<ul class="simple">
+<li>this is</li>
+<li>a list<ul>
+<li>with a nested list</li>
+<li>and some subitems</li>
+</ul>
+</li>
+<li>and here the parent list continues</li>
+</ul>
+<p>Definition lists are created as follows:</p>
+<dl class="docutils">
+<dt>term (up to a line of text)</dt>
+<dd><p class="first">Definition of the term, which must be indented</p>
+<p class="last">and can even consist of multiple paragraphs</p>
+</dd>
+<dt>next term</dt>
+<dd>Description.</dd>
+</dl>
+<p>Note that the term cannot have more than one line of text.</p>
+<p>Quoted paragraphs are created by just indenting them more than the surrounding paragraphs.</p>
+<p>Line blocks are a way of preserving line breaks:</p>
+<div class="line-block">
+<div class="line">These lines are</div>
+<div class="line">broken exactly like in</div>
+<div class="line">the source file.</div>
+</div>
+<p>There are also several more special blocks available:</p>
+<ul class="simple">
+<li>field lists</li>
+<li>option lists</li>
+<li>quoted literal blocks</li>
+<li>doctest blocks</li>
+</ul>
+</div>
+<div class="section" id="source-code">
+<h2>1.4. Source Code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h2>
+<p>Literal code blocks (ref) are introduced by ending a paragraph with the special marker ::.
+The literal block must be indented (and, like all paragraphs, separated from the surrounding ones by blank lines):</p>
+<p>This is a normal text paragraph. The next paragraph is a code sample:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">It</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">processed</span> <span class="ow">in</span> <span class="nb">any</span> <span class="n">way</span><span class="p">,</span> <span class="k">except</span>
+<span class="n">that</span> <span class="n">the</span> <span class="n">indentation</span> <span class="ow">is</span> <span class="n">removed</span><span class="o">.</span>
+
+<span class="n">It</span> <span class="n">can</span> <span class="n">span</span> <span class="n">multiple</span> <span class="n">lines</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>This is a normal text paragraph again.</p>
+<p>The handling of the :: marker is smart:</p>
+<ul class="simple">
+<li>If it occurs as a paragraph of its own, that paragraph is completely left out of the document.</li>
+<li>If it is preceded by whitespace, the marker is removed.</li>
+<li>If it is preceded by non-whitespace, the marker is replaced by a single colon.</li>
+</ul>
+<p>That way, the second sentence in the above example’s first paragraph would be rendered as “The next paragraph is a code sample:”.</p>
+</div>
+<div class="section" id="tables">
+<h2>1.5. Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h2>
+<p>Two forms of tables are supported.
+For grid tables , you have to “paint” the cell grid yourself. They look like this:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="43%" />
+<col width="21%" />
+<col width="18%" />
+<col width="18%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Header row, column 1
+(header rows optional)</th>
+<th class="head">Header 2</th>
+<th class="head">Header 3</th>
+<th class="head">Header 4</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>body row 1, column 1</td>
+<td>column 2</td>
+<td>column 3</td>
+<td>column 4</td>
+</tr>
+<tr class="row-odd"><td>body row 2</td>
+<td>...</td>
+<td>...</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Simple tables (ref) are easier to write, but limited: they must contain more than one row, and the first column cannot contain multiple lines.
+They look like this:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="29%" />
+<col width="29%" />
+<col width="41%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">A</th>
+<th class="head">B</th>
+<th class="head">A and B</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>True</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-even"><td>False</td>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="hyperlinks">
+<h2>1.6. Hyperlinks<a class="headerlink" href="#hyperlinks" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="external-links">
+<h3>1.6.1. External links<a class="headerlink" href="#external-links" title="Permalink to this headline">¶</a></h3>
+<p>Use <a class="reference external" href="http://example.com/">Link text</a> for inline web links.
+If the link text should be the web address, you don’t need special markup at all, the parser finds links and mail addresses in ordinary text.</p>
+<p>You can also separate the link and the target definition, like this:</p>
+<p>This is a paragraph that contains <a class="reference external" href="http://example.com/">a link</a>.</p>
+</div>
+<div class="section" id="internal-links">
+<h3>1.6.2. Internal links<a class="headerlink" href="#internal-links" title="Permalink to this headline">¶</a></h3>
+<p>Internal linking is done via a special reST role provided by Sphinx, see the section on specific markup, Cross-referencing arbitrary locations.</p>
+</div>
+</div>
+<div class="section" id="sections">
+<h2>1.7. Sections<a class="headerlink" href="#sections" title="Permalink to this headline">¶</a></h2>
+<p>Section headers are created by underlining (and optionally overlining) the section title with a punctuation character,
+at least as long as the text:</p>
+<p>Normally, there are no heading levels assigned to certain characters as the structure is determined from the succession of headings.
+However, this convention is used in Python’s Style Guide for documenting which you may follow:</p>
+<ul class="simple">
+<li># with overline, for parts</li>
+<li><ul class="first">
+<li>with overline, for chapters</li>
+</ul>
+</li>
+<li>=, for sections</li>
+<li>-, for subsections</li>
+<li>^, for subsubsections</li>
+<li>&#8221;, for paragraphs</li>
+</ul>
+<p>Of course, you are free to use your own marker characters (see the reST documentation), and use a deeper nesting level,
+but keep in mind that most target formats (HTML, LaTeX) have a limited supported nesting depth.</p>
+</div>
+<div class="section" id="citations">
+<h2>1.8. Citations<a class="headerlink" href="#citations" title="Permalink to this headline">¶</a></h2>
+<p>Standard reST citations are supported, with the additional feature that they are “global”, i.e. all citations can be referenced from all files. Use them like so:</p>
+<p>Lorem ipsum <a class="reference internal" href="#ref" id="id1">[Ref]</a> dolor sit amet.</p>
+<table class="docutils citation" frame="void" id="ref" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[Ref]</a></td><td>Book or article reference, URL or whatever.</td></tr>
+</tbody>
+</table>
+<p>Citation usage is similar to footnote usage, but with a label that is not numeric or begins with #</p>
+</div>
+<div class="section" id="comments">
+<h2>1.9. Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h2>
+<p>Every explicit markup block which isn’t a valid markup construct (like the footnotes above) is regarded as a comment. For example:</p>
+<p>You can indent text after a comment start to form multiline comments:</p>
+</div>
+<div class="section" id="source-encoding">
+<h2>1.10. Source encoding<a class="headerlink" href="#source-encoding" title="Permalink to this headline">¶</a></h2>
+<p>Since the easiest way to include special characters like em dashes or copyright signs in reST is to directly write them as Unicode characters,
+one has to specify an encoding. Sphinx assumes source files to be encoded in UTF-8 by default;
+you can change this with the source_encoding config value.</p>
+</div>
+</div>
+<div class="section" id="section-to-cross-reference">
+<h1>2. Section to cross-reference<a class="headerlink" href="#section-to-cross-reference" title="Permalink to this headline">¶</a></h1>
+<p>This is the text of the section.</p>
+<p>It refers to the section itself, see For more details, see <a class="reference internal" href="#introduction"><span class="std std-ref">Introduction</span></a>.</p>
+<p>Link to another <a class="reference internal" href="#inline-markup"><span class="std std-ref">Inline markup</span></a>.</p>
+<p>Link to another <a class="reference internal" href="#inline-markup"><span class="std std-ref">The same</span></a> at the same Inline markup.</p>
+<p>Link to <a class="reference internal" href="images.html#images"><span class="std std-ref">Images</span></a>.</p>
+<p>Link to <a class="reference internal" href="images.html#figures"><span class="std std-ref">Figures</span></a>.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">1. Introduction</a><ul>
+<li><a class="reference internal" href="#paragraphs">1.1. Paragraphs</a></li>
+<li><a class="reference internal" href="#inline-markup">1.2. Inline markup</a></li>
+<li><a class="reference internal" href="#lists-and-quote-like-blocks">1.3. Lists and Quote-like blocks</a></li>
+<li><a class="reference internal" href="#source-code">1.4. Source Code</a></li>
+<li><a class="reference internal" href="#tables">1.5. Tables</a></li>
+<li><a class="reference internal" href="#hyperlinks">1.6. Hyperlinks</a><ul>
+<li><a class="reference internal" href="#external-links">1.6.1. External links</a></li>
+<li><a class="reference internal" href="#internal-links">1.6.2. Internal links</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sections">1.7. Sections</a></li>
+<li><a class="reference internal" href="#citations">1.8. Citations</a></li>
+<li><a class="reference internal" href="#comments">1.9. Comments</a></li>
+<li><a class="reference internal" href="#source-encoding">1.10. Source encoding</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#section-to-cross-reference">2. Section to cross-reference</a></li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../index.html"
+                        title="previous chapter">Welcome to prueba´s documentation!</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="directives.html"
+                        title="next chapter">3. Directives</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/usage/introduction.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="directives.html" title="3. Directives"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Welcome to prueba´s documentation!"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">exam  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, mito.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.6.
+    </div>
+  </body>
+</html>
