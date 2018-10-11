@@ -4,14 +4,14 @@
    contain the root `toctree` directive.
 
 
-.. contents:: Table of Contents
-
 Welcome to prueba´s documentation!
 ==================================
 
+.. contents:: Table of Contents
+
 .. toctree::
    :numbered:
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Contents:
 
    usage/introduction
@@ -20,6 +20,8 @@ Welcome to prueba´s documentation!
    usage/quickstart
    usage/tablas
    usage/images
+   usage/mathematics
+   usage/modulo
 
 Index and tables
 ==================

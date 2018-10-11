@@ -24,6 +24,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="6. This is a tables" href="tablas.html" />
@@ -94,6 +95,61 @@ backquotes: <code class="docutils literal"><span class="pre">text</span></code> 
 </tr>
 </tbody>
 </table>
+<div class="section" id="code">
+<h2>5.1. Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h2>
+<p>Here is something I want to talk about:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_fn</span><span class="p">(</span><span class="n">foo</span><span class="p">,</span> <span class="n">bar</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;A really useful function.</span>
+
+<span class="sd">    Returns None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</pre></div>
+</div>
+<p>This is inline <code class="docutils literal"><span class="pre">if</span> <span class="pre">__name__</span> <span class="pre">==</span> <span class="pre">'__main__':</span></code></p>
+</div>
+<div class="section" id="python-cross-referencing-syntax">
+<h2>5.2. Python Cross Referencing Syntax<a class="headerlink" href="#python-cross-referencing-syntax" title="Permalink to this headline">¶</a></h2>
+<p>I really like the <code class="xref py py-mod docutils literal"><span class="pre">threading</span></code> module which has the
+<code class="xref py py-class docutils literal"><span class="pre">threading.Thread</span></code> class.</p>
+<p>Here is a link <code class="xref py py-func docutils literal"><span class="pre">time.time()</span></code>.</p>
+</div>
+<div class="section" id="function-definitions">
+<h2>5.3. Function Definitions<a class="headerlink" href="#function-definitions" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="format_exception">
+<code class="descname">format_exception</code><span class="sig-paren">(</span><em>etype</em>, <em>value</em>, <em>tb</em><span class="optional">[</span>, <em>limit=None</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#format_exception" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format the exception with a traceback.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>etype</strong> &#8211; exception type</li>
+<li><strong>value</strong> &#8211; exception value</li>
+<li><strong>tb</strong> &#8211; traceback object</li>
+<li><strong>limit</strong> (<em>integer</em><em> or </em><em>None</em>) &#8211; maximum number of stack frames to show</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list of strings</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="full-code-example">
+<h2>5.4. Full Code Example<a class="headerlink" href="#full-code-example" title="Permalink to this headline">¶</a></h2>
+<p>&#8220;&#8221;&#8220;A pypi demonstration vehicle.</p>
+<p>&#8220;&#8221;&#8220;</p>
+<p>import useful_1
+import useful_2</p>
+<dl class="docutils">
+<dt>def start():</dt>
+<dd>&#8220;This starts this module running ...&#8221;</dd>
+</dl>
+</div>
 </div>
 
 
@@ -102,6 +158,17 @@ backquotes: <code class="docutils literal"><span class="pre">text</span></code> 
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">5. Quickstart</a><ul>
+<li><a class="reference internal" href="#code">5.1. Code</a></li>
+<li><a class="reference internal" href="#python-cross-referencing-syntax">5.2. Python Cross Referencing Syntax</a></li>
+<li><a class="reference internal" href="#function-definitions">5.3. Function Definitions</a></li>
+<li><a class="reference internal" href="#full-code-example">5.4. Full Code Example</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="installation.html"
                         title="previous chapter">4. Installation!</a></p>

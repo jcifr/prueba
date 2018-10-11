@@ -25,3 +25,57 @@ This is a normal text paragraph again.
 +------------------------+------------+----------+----------+
 | body row 2             | ...        | ...      |          |
 +------------------------+------------+----------+----------+
+
+
+Code
+____
+
+Here is something I want to talk about::
+
+    def my_fn(foo, bar=True):
+        """A really useful function.
+
+        Returns None
+        """
+
+This is inline ``if __name__ == '__main__':``
+
+Python Cross Referencing Syntax
+_______________________________
+
+I really like the :mod:`threading` module which has the
+:class:`threading.Thread` class.
+
+Here is a link :func:`time.time`.
+
+Function Definitions
+____________________
+
+.. function:: format_exception(etype, value, tb[, limit=None])
+
+   Format the exception with a traceback.
+
+   :param etype: exception type
+   :param value: exception value
+   :param tb: traceback object
+   :param limit: maximum number of stack frames to show
+   :type limit: integer or None
+   :rtype: list of strings
+
+Full Code Example
+_________________
+
+"""A pypi demonstration vehicle.
+
+.. moduleauthor:: Andrew Carter <andrew@invalid.com>
+
+"""
+
+import useful_1
+import useful_2
+
+
+def start():
+    "This starts this module running ..."
+
+
