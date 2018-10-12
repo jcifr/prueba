@@ -1,9 +1,25 @@
 Directives
 ==========
 
+Lorem ipsum [#f1]_ dolor sit amet ... [#f2]_
+
+Footnotes
+_________
+
+.. rubric:: Footnotes
+
+.. [#f1] Text of the first footnote.
+.. [#f2] Text of the second footnote.
+
+note
+____
+
 .. note::
 
    This function is not suitable for sending spam e-mails.
+
+warning
+_______
 
 .. warning::
 
@@ -11,12 +27,21 @@ Directives
    The content of the directive should be written in complete sentences and include all appropriate punctuation.
    This differs from note in that it is recommended over note for information regarding security.
 
+versionadded
+____________
+
 .. versionadded:: 2.5
 
    The *spam* parameter.
 
+deprecated
+__________
+
 .. deprecated:: 3.1
    Use :func:`spam` instead.
+
+seealso
+_______
 
 .. seealso::
 
@@ -26,7 +51,12 @@ Directives
    `GNU tar manual, Basic Tar Format <http://link>`_
       Documentation for tar archive files, including GNU tar extensions.
 
+rubric
+______
 .. rubric:: title
+
+hlist
+_____
 
 .. hlist::
    :columns: 3
@@ -36,6 +66,9 @@ Directives
    * that should be
    * displayed
    * horizontally
+
+glossary
+________
 
 .. glossary::
 
@@ -65,12 +98,19 @@ Directives
 
    This function is not suitable for sending spam e-mails.
 
+images
+______
+
 How to include images in project:
 
 .. image:: images/im1.jpg
    :scale: 50 %
    :alt: alternate text
    :align: center
+
+productionlist
+______________
+
 
 .. productionlist::
    try_stmt: try1_stmt | try2_stmt
@@ -81,8 +121,14 @@ How to include images in project:
    try2_stmt: "try" ":" `suite`
             : "finally" ":" `suite`
 
+DANGER
+______
+
 .. DANGER::
    Beware killer rabbits!
+
+topic
+_____
 
 .. topic:: Topic Title
 
@@ -90,12 +136,19 @@ How to include images in project:
     the body of the topic, and are
     interpreted as body elements.
 
+sidebar
+_______
+
+
 .. sidebar:: Sidebar Title
    :subtitle: Optional Sidebar Subtitle
 
    Subsequent indented lines comprise
    the body of the sidebar, and are
    interpreted as body elements.
+
+compound
+________
 
 .. compound::
 
@@ -106,6 +159,9 @@ How to include images in project:
        rm -rf *
 
    you will erase the entire contents of your file system.
+
+container
+_________
 
 .. container:: custom
 
@@ -119,6 +175,54 @@ Parsing the above results in the following pseudo-XML:
 
 The "container" directive is the equivalent of HTML's <div> element.
 It may be used to group a sequence of elements for user- or application-specific purposes.
+
+code-block
+__________
+
+.. code-block:: python
+   :emphasize-lines: 3,5
+
+   def some_function():
+       interesting = False
+       print 'This line is highlighted.'
+       print 'This one is not...'
+       print '...but this one is.'
+
+literalinclude
+______________
+
+.. literalinclude:: codpyhon.py
+   :language: python
+   :emphasize-lines: 12,15-18
+   :linenos:
+
+code-block1
+___________
+
+.. code-block:: python
+   :caption: this.py
+   :name: this-py
+
+   print 'Explicit is better than implicit.'
+
+abbr
+____
+
+:abbr:`LIFO (last-in, first-out)`.
+
+menuselection
+_____________
+
+:menuselection:`Start --> Programs`
+
+
+
+
+
+
+
+
+
 
 
 

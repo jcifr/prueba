@@ -341,3 +341,4 @@ member should be included in the documentation by using the following event:
       ``inherited_members``, ``undoc_members``, ``show_inheritance`` and
       ``noindex`` that are true if the flag option of same name was given to the
       auto directive
+

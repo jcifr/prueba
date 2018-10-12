@@ -38,6 +38,9 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
           <a href="installation.html" title="4. Installation!"
              accesskey="N">next</a> |</li>
         <li class="right" >
@@ -54,22 +57,53 @@
             
   <div class="section" id="directives">
 <h1>3. Directives<a class="headerlink" href="#directives" title="Permalink to this headline">¶</a></h1>
+<p>Lorem ipsum <a class="footnote-reference" href="#f1" id="id1">[1]</a> dolor sit amet ... <a class="footnote-reference" href="#f2" id="id2">[2]</a></p>
+<div class="section" id="footnotes">
+<h2>3.1. Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this headline">¶</a></h2>
+<p class="rubric">Footnotes</p>
+<table class="docutils footnote" frame="void" id="f1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Text of the first footnote.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>Text of the second footnote.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="note">
+<h2>3.2. note<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This function is not suitable for sending spam e-mails.</p>
 </div>
+</div>
+<div class="section" id="warning">
+<h2>3.3. warning<a class="headerlink" href="#warning" title="Permalink to this headline">¶</a></h2>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">An important bit of information about an API that a user should be very aware of when using whatever bit of API the warning pertains to.
 The content of the directive should be written in complete sentences and include all appropriate punctuation.
 This differs from note in that it is recommended over note for information regarding security.</p>
 </div>
+</div>
+<div class="section" id="versionadded">
+<h2>3.4. versionadded<a class="headerlink" href="#versionadded" title="Permalink to this headline">¶</a></h2>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.5: </span>The <em>spam</em> parameter.</p>
 </div>
+</div>
+<div class="section" id="deprecated">
+<h2>3.5. deprecated<a class="headerlink" href="#deprecated" title="Permalink to this headline">¶</a></h2>
 <div class="deprecated">
 <p><span class="versionmodified">Deprecated since version 3.1: </span>Use <code class="xref py py-func docutils literal"><span class="pre">spam()</span></code> instead.</p>
 </div>
+</div>
+<div class="section" id="seealso">
+<h2>3.6. seealso<a class="headerlink" href="#seealso" title="Permalink to this headline">¶</a></h2>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
@@ -79,7 +113,13 @@ This differs from note in that it is recommended over note for information regar
 <dd>Documentation for tar archive files, including GNU tar extensions.</dd>
 </dl>
 </div>
+</div>
+<div class="section" id="rubric">
+<h2>3.7. rubric<a class="headerlink" href="#rubric" title="Permalink to this headline">¶</a></h2>
 <p class="rubric">title</p>
+</div>
+<div class="section" id="hlist">
+<h2>3.8. hlist<a class="headerlink" href="#hlist" title="Permalink to this headline">¶</a></h2>
 <table class="hlist"><tr><td><ul class="simple">
 <li>A list of</li>
 <li>short items</li>
@@ -92,6 +132,9 @@ This differs from note in that it is recommended over note for information regar
 <li>horizontally</li>
 </ul>
 </td></tr></table>
+</div>
+<div class="section" id="glossary">
+<h2>3.9. glossary<a class="headerlink" href="#glossary" title="Permalink to this headline">¶</a></h2>
 <dl class="glossary docutils">
 <dt id="term-environment">environment</dt>
 <dd>A structure where information about all documents under the root is
@@ -115,8 +158,14 @@ RST is designed for extensibility for specific application domains. The RST pars
 <p class="first admonition-title">Note</p>
 <p class="last">This function is not suitable for sending spam e-mails.</p>
 </div>
+</div>
+<div class="section" id="images">
+<h2>3.10. images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h2>
 <p>How to include images in project:</p>
 <a class="reference internal image-reference" href="../_images/im1.jpg"><img alt="alternate text" class="align-center" src="../_images/im1.jpg" style="width: 480.0px; height: 321.0px;" /></a>
+</div>
+<div class="section" id="productionlist">
+<h2>3.11. productionlist<a class="headerlink" href="#productionlist" title="Permalink to this headline">¶</a></h2>
 <pre>
 <strong id="grammar-token-try_stmt">try_stmt </strong> ::=  try1_stmt | try2_stmt
 <strong id="grammar-token-try1_stmt">try1_stmt</strong> ::=  &quot;try&quot; &quot;:&quot; <code class="xref docutils literal"><span class="pre">suite</span></code>
@@ -126,16 +175,25 @@ RST is designed for extensibility for specific application domains. The RST pars
 <strong id="grammar-token-try2_stmt">try2_stmt</strong> ::=  &quot;try&quot; &quot;:&quot; <code class="xref docutils literal"><span class="pre">suite</span></code>
                &quot;finally&quot; &quot;:&quot; <code class="xref docutils literal"><span class="pre">suite</span></code>
 </pre>
+</div>
+<div class="section" id="danger">
+<h2>3.12. DANGER<a class="headerlink" href="#danger" title="Permalink to this headline">¶</a></h2>
 <div class="admonition danger">
 <p class="first admonition-title">Danger</p>
 <p class="last">Beware killer rabbits!</p>
 </div>
+</div>
+<div class="section" id="topic">
+<h2>3.13. topic<a class="headerlink" href="#topic" title="Permalink to this headline">¶</a></h2>
 <div class="topic">
 <p class="topic-title first">Topic Title</p>
 <p>Subsequent indented lines comprise
 the body of the topic, and are
 interpreted as body elements.</p>
 </div>
+</div>
+<div class="section" id="sidebar">
+<h2>3.14. sidebar<a class="headerlink" href="#sidebar" title="Permalink to this headline">¶</a></h2>
 <div class="sidebar">
 <p class="first sidebar-title">Sidebar Title</p>
 <p class="sidebar-subtitle">Optional Sidebar Subtitle</p>
@@ -143,6 +201,9 @@ interpreted as body elements.</p>
 the body of the sidebar, and are
 interpreted as body elements.</p>
 </div>
+</div>
+<div class="section" id="compound">
+<h2>3.15. compound<a class="headerlink" href="#compound" title="Permalink to this headline">¶</a></h2>
 <div class="compound">
 <p class="compound-first">The &#8216;rm&#8217; command is very dangerous.  If you are logged
 in as root and enter</p>
@@ -152,6 +213,9 @@ in as root and enter</p>
 </div>
 <p class="compound-last">you will erase the entire contents of your file system.</p>
 </div>
+</div>
+<div class="section" id="container">
+<h2>3.16. container<a class="headerlink" href="#container" title="Permalink to this headline">¶</a></h2>
 <div class="custom docutils container">
 This paragraph might be rendered in a custom way.</div>
 <p>Parsing the above results in the following pseudo-XML:</p>
@@ -166,6 +230,64 @@ This paragraph might be rendered in a custom way.</div>
 <p>The &#8220;container&#8221; directive is the equivalent of HTML&#8217;s &lt;div&gt; element.
 It may be used to group a sequence of elements for user- or application-specific purposes.</p>
 </div>
+<div class="section" id="code-block">
+<h2>3.17. code-block<a class="headerlink" href="#code-block" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">some_function</span><span class="p">():</span>
+    <span class="n">interesting</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="hll">    <span class="k">print</span> <span class="s1">&#39;This line is highlighted.&#39;</span>
+</span>    <span class="k">print</span> <span class="s1">&#39;This one is not...&#39;</span>
+<span class="hll">    <span class="k">print</span> <span class="s1">&#39;...but this one is.&#39;</span>
+</span></pre></div>
+</div>
+</div>
+<div class="section" id="literalinclude">
+<h2>3.18. literalinclude<a class="headerlink" href="#literalinclude" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">1D plotting</span>
+<span class="sd">===========</span>
+<span class="sd">Plot a basic 1D figure</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="hll"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">)</span>
+</span><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="code-block1">
+<h2>3.19. code-block1<a class="headerlink" href="#code-block1" title="Permalink to this headline">¶</a></h2>
+<div class="literal-block-wrapper docutils container" id="this-py">
+<div class="code-block-caption"><span class="caption-text">this.py</span><a class="headerlink" href="#this-py" title="Permalink to this code">¶</a></div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">print</span> <span class="s1">&#39;Explicit is better than implicit.&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="abbr">
+<h2>3.20. abbr<a class="headerlink" href="#abbr" title="Permalink to this headline">¶</a></h2>
+<p><abbr title="last-in, first-out">LIFO</abbr>.</p>
+</div>
+<div class="section" id="menuselection">
+<h2>3.21. menuselection<a class="headerlink" href="#menuselection" title="Permalink to this headline">¶</a></h2>
+<p><span class="menuselection">Start ‣ Programs</span></p>
+</div>
+</div>
 
 
           </div>
@@ -173,6 +295,34 @@ It may be used to group a sequence of elements for user- or application-specific
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">3. Directives</a><ul>
+<li><a class="reference internal" href="#footnotes">3.1. Footnotes</a></li>
+<li><a class="reference internal" href="#note">3.2. note</a></li>
+<li><a class="reference internal" href="#warning">3.3. warning</a></li>
+<li><a class="reference internal" href="#versionadded">3.4. versionadded</a></li>
+<li><a class="reference internal" href="#deprecated">3.5. deprecated</a></li>
+<li><a class="reference internal" href="#seealso">3.6. seealso</a></li>
+<li><a class="reference internal" href="#rubric">3.7. rubric</a></li>
+<li><a class="reference internal" href="#hlist">3.8. hlist</a></li>
+<li><a class="reference internal" href="#glossary">3.9. glossary</a></li>
+<li><a class="reference internal" href="#images">3.10. images</a></li>
+<li><a class="reference internal" href="#productionlist">3.11. productionlist</a></li>
+<li><a class="reference internal" href="#danger">3.12. DANGER</a></li>
+<li><a class="reference internal" href="#topic">3.13. topic</a></li>
+<li><a class="reference internal" href="#sidebar">3.14. sidebar</a></li>
+<li><a class="reference internal" href="#compound">3.15. compound</a></li>
+<li><a class="reference internal" href="#container">3.16. container</a></li>
+<li><a class="reference internal" href="#code-block">3.17. code-block</a></li>
+<li><a class="reference internal" href="#literalinclude">3.18. literalinclude</a></li>
+<li><a class="reference internal" href="#code-block1">3.19. code-block1</a></li>
+<li><a class="reference internal" href="#abbr">3.20. abbr</a></li>
+<li><a class="reference internal" href="#menuselection">3.21. menuselection</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="introduction.html"
                         title="previous chapter">1. Introduction</a></p>
@@ -206,6 +356,9 @@ It may be used to group a sequence of elements for user- or application-specific
         <li class="right" style="margin-right: 10px">
           <a href="../genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
         <li class="right" >
           <a href="installation.html" title="4. Installation!"
              >next</a> |</li>
