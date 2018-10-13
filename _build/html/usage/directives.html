@@ -287,6 +287,80 @@ It may be used to group a sequence of elements for user- or application-specific
 <h2>3.21. menuselection<a class="headerlink" href="#menuselection" title="Permalink to this headline">¶</a></h2>
 <p><span class="menuselection">Start ‣ Programs</span></p>
 </div>
+<div class="section" id="function">
+<h2>3.22. function<a class="headerlink" href="#function" title="Permalink to this headline">¶</a></h2>
+<p>The most prominent domain is the Python domain. For example, to document Python’s built-in function enumerate(),
+you would add this to one of your source files:</p>
+<dl class="function">
+<dt id="enumerate">
+<code class="descname">enumerate</code><span class="sig-paren">(</span><em>sequence</em><span class="optional">[</span>, <em>start=0</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#enumerate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an iterator that yields tuples of an index and an item of the
+<em>sequence</em>. (And so on.)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="class-y-method">
+<h2>3.23. class y method<a class="headerlink" href="#class-y-method" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Foo">
+<em class="property">class </em><code class="descname">Foo</code><a class="headerlink" href="#Foo" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="Foo.quux">
+<code class="descname">quux</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Foo.quux" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<p>&#8211; or &#8211;</p>
+<dl class="class">
+<dt id="Bar">
+<em class="property">class </em><code class="descname">Bar</code><a class="headerlink" href="#Bar" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Bar.quux">
+<code class="descclassname">Bar.</code><code class="descname">quux</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Bar.quux" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Another function:</p>
+<dl class="function">
+<dt id="send_message">
+<code class="descname">send_message</code><span class="sig-paren">(</span><em>sender</em>, <em>recipient</em>, <em>message_body</em><span class="optional">[</span>, <em>priority=1</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#send_message" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send a message to a recipient</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>sender</strong> (<em>str</em>) &#8211; The person sending the message</li>
+<li><strong>recipient</strong> (<em>str</em>) &#8211; The recipient of the message</li>
+<li><strong>message_body</strong> (<em>str</em>) &#8211; The body of the message</li>
+<li><strong>priority</strong> (<em>integer</em><em> or </em><em>None</em>) &#8211; The priority of the message, can be a number 1-5</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the message id</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">int</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li><strong>ValueError</strong> &#8211; if the message_body exceeds 160 characters</li>
+<li><strong>TypeError</strong> &#8211; if the message_body is not a basestring</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="compile">
+<code class="descname">compile</code><span class="sig-paren">(</span><em>source : string</em>, <em>filename</em>, <em>symbol='file'</em><span class="sig-paren">)</span> &#x2192; ast object<a class="headerlink" href="#compile" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
 </div>
 
 
@@ -319,6 +393,8 @@ It may be used to group a sequence of elements for user- or application-specific
 <li><a class="reference internal" href="#code-block1">3.19. code-block1</a></li>
 <li><a class="reference internal" href="#abbr">3.20. abbr</a></li>
 <li><a class="reference internal" href="#menuselection">3.21. menuselection</a></li>
+<li><a class="reference internal" href="#function">3.22. function</a></li>
+<li><a class="reference internal" href="#class-y-method">3.23. class y method</a></li>
 </ul>
 </li>
 </ul>

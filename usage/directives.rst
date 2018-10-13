@@ -215,6 +215,48 @@ _____________
 
 :menuselection:`Start --> Programs`
 
+function
+________
+
+The most prominent domain is the Python domain. For example, to document Python’s built-in function enumerate(),
+you would add this to one of your source files:
+
+.. function:: enumerate(sequence[, start=0])
+
+   Return an iterator that yields tuples of an index and an item of the
+   *sequence*. (And so on.)
+
+class y method
+______________
+
+.. py:class:: Foo
+
+   .. py:method:: quux()
+
+-- or --
+
+.. py:class:: Bar
+
+.. py:method:: Bar.quux()
+
+Another function:
+
+.. py:function:: send_message(sender, recipient, message_body, [priority=1])
+
+   Send a message to a recipient
+
+   :param str sender: The person sending the message
+   :param str recipient: The recipient of the message
+   :param str message_body: The body of the message
+   :param priority: The priority of the message, can be a number 1-5
+   :type priority: integer or None
+   :return: the message id
+   :rtype: int
+   :raises ValueError: if the message_body exceeds 160 characters
+   :raises TypeError: if the message_body is not a basestring
+
+.. py:function:: compile(source : string, filename, symbol='file') -> ast object
+
 
 
 
