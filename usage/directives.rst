@@ -193,7 +193,7 @@ ______________
 
 .. literalinclude:: codpyhon.py
    :language: python
-   :emphasize-lines: 12,15-18
+   :emphasize-lines: 4,12,15-18
    :linenos:
 
 code-block1
@@ -256,6 +256,44 @@ Another function:
    :raises TypeError: if the message_body is not a basestring
 
 .. py:function:: compile(source : string, filename, symbol='file') -> ast object
+
+seealso
+_______
+
+.. seealso::
+
+         Module :py:mod:`zipfile`
+            Documentation of the :py:mod:`zipfile` standard module.
+
+         `GNU tar manual, Basic Tar Format <http://link>`_
+            Documentation for tar archive files, including GNU tar extensions.
+
+      .. seealso:: modules :py:mod:`zipfile`, :py:mod:`tarfile`
+
+   .. versionadded:: 0.5
+      The short form.
+
+sectionauthor
+_____________
+
+.. rst:directive:: .. sectionauthor:: name <email>
+
+   Identifies the author of the current section.  The argument should include
+   the author's name such that it can be used for presentation and email
+   address.  The domain name portion of the address should be lower case.
+   Example::
+
+      .. sectionauthor:: Guido van Rossum <guido@python.org>
+
+   By default, this markup isn't reflected in the output in any way (it helps
+   keep track of contributions), but you can set the configuration value
+   :confval:`show_authors` to ``True`` to make them produce a paragraph in the
+   output.
+
+currentmodule
+_____________
+
+.. currentmodule:: sphinx
 
 
 

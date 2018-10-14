@@ -1,5 +1,8 @@
-:mod:`sphinx.ext.autodoc` -- Include documentation from docstrings
-==================================================================
+Modulos
+=======
+
+mod:`sphinx.ext.autodoc` -- Include documentation from docstrings
+_________________________________________________________________
 
 .. module:: sphinx.ext.autodoc
    :synopsis: Include documentation from docstrings.
@@ -51,6 +54,7 @@ inserting them into the page source under a suitable :rst:dir:`py:module`,
       .. class:: Noodle
 
          Noodle's docstring.
+
 
    The "auto" directives can also contain content of their own, it will be
    inserted into the resulting non-auto directive source after the docstring
